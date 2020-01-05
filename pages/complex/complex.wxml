@@ -1,13 +1,17 @@
 <!--pages/complex/complex.wxml-->
 
-<van-button type="primary" size="small">简单查询</van-button>
-<van-button type="info" size="small">信息按钮</van-button>
+<van-button type="primary" bindtap="click">简单查询</van-button>
+<van-button type="info" bindtap="chooseRed">筛选红色</van-button>
 <van-button type="warning" size="small">警告按钮</van-button>
+<block wx:for="{{products}}">
 <van-card
-  num="2"
-  price="2.00"
-  desc="描述信息"
-  title="商品标题"
-  thumb="{{ imageURL }}"
+  price="{{item.price}}"
+  
+  desc="{{item.color}}"
+  title="{{item.title}}"
+  thumb="{{item.image}}"
+  data-id="{{item._id}}"
+  
 />
+</block>
 
