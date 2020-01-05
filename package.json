@@ -1,0 +1,23 @@
+{
+  "name": "kaoqin1-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/man8901022/kaoqin1-master.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/man8901022/kaoqin1-master/issues"
+  },
+  "homepage": "https://github.com/man8901022/kaoqin1-master#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.0.2"
+  }
+}

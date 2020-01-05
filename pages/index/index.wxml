@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<input placeholder="输入名字" bindinput="addName">名字</input>
+<input placeholder="输入年龄" bindinput="addAge">年龄</input>
+<input placeholder="要删除的数据ID" bindinput="delDataInput" >删除数据</input>
+<button bindtap="addData" type ="primary">添加数据</button>
+<button bindtap="getData">查询数据</button>
+<button bindtap="delData" type ="warn">删除数据</button>
+
+<input placeholder="要更新数据的ID" bindinput="upDataInput" >更新数据ID</input>
+<input placeholder="输入名字" bindinput="addName">名字</input>
+<input placeholder="输入年龄" bindinput="addAge">年龄</input>
+
+
+<button bindtap="upData" type ="warn">更新数据</button>
+
+
+<button bindtap="getOpenId" type ="primary">获取用户ID</button>
+<button bindtap="getcloudData">云函数获取数据</button>
+<button bindtap="upload">上传文件</button>
+<image src ="{{imgurl}}">图片</image>
+

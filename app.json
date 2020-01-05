@@ -1,0 +1,22 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/add/add",
+    "pages/info/info",
+  
+    "pages/complex/complex"
+
+ 
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
