@@ -3,7 +3,7 @@ const productsCollection = db.collection("products")
 
 Page({
   data:{
-
+    count:'count'
   },
   click:function(event){
     console.log("调用开始")
@@ -20,6 +20,15 @@ Page({
     }).get().then(res => {
       this.setData({
         products: res.data
+      })
+    })
+  },
+
+  count:function(event){
+    productsCollection.count().then(res=>{
+      console.log(res)
+      this.setData({
+        count:res.total
       })
     })
   }

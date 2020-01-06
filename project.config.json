@@ -81,10 +81,10 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "pages/info/info",
 					"pathName": "pages/info/info",
-					"query": "",
+					"query": "id=6d3904ca5e112e72008ac972023f6622",
 					"scene": null
 				},
 				{
@@ -98,6 +98,7 @@
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				}
 			]

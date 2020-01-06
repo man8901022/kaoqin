@@ -1,17 +1,35 @@
 // pages/info/info.js
+const db = wx.cloud.database()
+const productsCollection = db.collection('products')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    products: productsCollection
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
+    // productsCollection.where({
+    //   _id:options.id
+    // }).get().then(res=>{
+    //   console.log(res.data)
+    //   this.setData({
+    //     products :res.data[0]
+    //   })
+    // })
+    productsCollection.doc(options.id).get().then(res => {
+      console.log(res.data)
+      this.setData({
+        products: res.data
+      })
+    })
+    
 
   },
 
@@ -25,8 +43,18 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
-
+  
+  sendMsg: function () {
+    wx.cloud.callFunction({
+      name:'sendMsg',
+          
+      success(res) {
+        console.log("获取成功", res.result.event)
+      },
+      fail(res) {
+        console.log("获取失败", res)
+      }
+    })
   },
 
   /**

@@ -2,7 +2,7 @@
 
 <van-button type="primary" bindtap="click">简单查询</van-button>
 <van-button type="info" bindtap="chooseRed">筛选红色</van-button>
-<van-button type="warning" size="small">警告按钮</van-button>
+<van-button type="warning" bindtap= "count">{{count}}</van-button>
 <block wx:for="{{products}}">
 <van-card
   price="{{item.price}}"
